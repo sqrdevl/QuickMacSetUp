@@ -1,10 +1,10 @@
 # InsanelyDeepak QuickMacSetUp 
   
-# This repo contains all file are required for me whenever new Macintosh/Hackintosh setup for first time 
+#### This repo contains all file are required for me whenever new Macintosh/Hackintosh setup for first time 
 
 
-### This is script with usefull tips taken from:
-https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+#### This is script with usefull tips taken from:
+#### https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
 
 ## Note : you must make few changes according to your region and languuage
