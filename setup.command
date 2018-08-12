@@ -26,7 +26,7 @@ set -x
 
 scriptdir=`dirname "$BASH_SOURCE"`
 cd $scriptdir
-cp ./resource "$HOME"
+cp -rf ./resource "$HOME"
 
 # Keep-alive: update existing `sudo` time stamp until `script` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
@@ -191,8 +191,8 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 35
+defaults write NSGlobalDomain KeyRepeat -int 3
+defaults write NSGlobalDomain InitialKeyRepeat -int 68
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -988,7 +988,7 @@ for app in "Activity Monitor" \
 	"SizeUp" \
 	"Spectacle" \
 	"SystemUIServer" \
-	#"Terminal" \
+	"Terminal" \
 	"Transmission" \
 	"Tweetbot" \
 	"Twitter" \
